@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_merchants"
+            android:icon="@drawable/merchant"
+            android:title="@string/merchants" />
+        <item
+            android:id="@+id/nav_office_manager"
+            android:icon="@drawable/om"
+            android:title="@string/office_managers" />
+        <item
+            android:id="@+id/nav_delivery_man"
+            android:icon="@drawable/delivery_man"
+            android:title="@string/delivery_mans" />
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/transaction"
+            android:title="@string/transactions" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/nav_orders"
+            android:title="Orders" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+
+</menu>

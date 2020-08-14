@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dashBoard"
+                android:text="DashBoard"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashBoard"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="10">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/rec1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_marginTop="3dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/customer"
+                                android:layout_marginStart="10dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/total_customers_md_dashboard"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Customers"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25dp"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/rec2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/businessman"
+                                android:layout_marginStart="10dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/total_merchants_md_dashboard"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Merchants"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25dp"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="10">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/rec3"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_marginTop="3dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/boss"
+                                android:layout_marginStart="10dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/total_om_md_dashboard"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Managers"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="23dp"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/rec4"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/delivery_man2"
+                                android:layout_marginStart="10dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/total_dm_md_dashboard"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="10dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Mans"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dash2"
+                    android:text="Unchecked Lists"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rec6"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:weightSum="10"
+                    android:layout_marginBottom="10dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/money"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/unchecked_transactions_MD_dashBoard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold"
+                            android:textSize="35sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Unchecked Transactions"
+                            android:layout_marginEnd="15dp"
+                            android:textAlignment="textEnd"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/unchecked_transactions_go_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/arrow"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rec5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:weightSum="10"
+                    android:layout_marginBottom="10dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/user"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/unchecked_merchant_requests_MD_dashBoard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold"
+                            android:textSize="35sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Unchecked Merchant Requests"
+                            android:layout_marginEnd="15dp"
+                            android:textAlignment="textEnd"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/unchecked_m_req_go_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/arrow"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rec8"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:weightSum="10"
+                    android:layout_marginBottom="10dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/delivery_man2"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/unchecked_dm_requests_MD_dashBoard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold"
+                            android:textSize="35sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Unchecked DM Requests"
+                            android:layout_marginEnd="15dp"
+                            android:textAlignment="textEnd"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/unchecked_dm_req_go_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/arrow"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>

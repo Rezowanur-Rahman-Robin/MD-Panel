@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/merchant_list_show_layout_merchant"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#D6D6D6">
+
+        <ImageView
+            android:id="@+id/merchant_image_md"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/businessman"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/merchant_name_md"
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:maxWidth="180dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+
+
+                    <TextView
+                        android:id="@+id/merchant_company_md"
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#FF3E00"
+                        android:textSize="14sp"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/details_merchant_md"
+                    android:text="Profile"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginEnd="15dp"
+                    />
+
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/delete_merchant_md"
+                    android:text="Delete"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:background="#B80101"
+                    android:layout_marginEnd="15dp"
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
